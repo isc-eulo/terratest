@@ -21,7 +21,7 @@ region = "us-east-2"
 
 //para crear una instancia EC2
 resource "aws_instance" "hello-instance" {
-  ami = "ami-0fb653ca2d3203ac1"//imagen del SO
+  ami = "ami-02af65b2d1ebdfafc"//imagen del SO
   instance_type = "t2.micro"//tipo recursos ram y pcu
   tags = {
     Name = "hello-instance"

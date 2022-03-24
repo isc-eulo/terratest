@@ -81,12 +81,9 @@ provisioner "remote-exec" {
       "sudo apt install -y software-properties-common",
       "sudo apt-add-repository --yes --update ppa:ansible/ansible",
       "sudo apt install -y ansible",
-      "sudo su -",
-      "mkdir /nas",
-      "chmod 755 /nas",
-      "yes | sudo apt-get install apache2",
-      "systemctl enable --now apache2",
-      "curl http://127.0.0.1"
+  
+      "sudo mkdir /nas",
+      "sudo chmod 775 /nas"
     ]
 
     connection {
