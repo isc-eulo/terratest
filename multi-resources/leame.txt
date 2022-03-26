@@ -1,0 +1,8 @@
+Ejercicio guiado: Implementar múltiples recursos 
+
+contiene database, auto escalin,red
+
+se crean 3 grupos de seguridad
+valanceadorde carga pt 80
+servidor web 8080
+servidor de bd 3206

@@ -1,0 +1,3 @@
+Ejercicio guiado - Terraform cloud como backend desde VSC
+creacion instancia
+y sincronizacion con app.terraform.io/app/

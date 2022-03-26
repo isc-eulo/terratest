@@ -1,0 +1,2 @@
+Ejercicio guiado: Manejo de módulos
+se separa el projecto tipo mvc en moduloste

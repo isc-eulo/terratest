@@ -1,0 +1,3 @@
+Ejercicio guiado - Backed en bucket s3
+bucket con rol
+us-west-1

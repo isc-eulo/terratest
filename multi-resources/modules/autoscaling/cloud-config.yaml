@@ -1,0 +1,22 @@
+#cloud-config datos de var.db_config , runcmd descarga una applicacion y se puede poner logica si se quiere actulizar o si ya existe q no realize nada
+write_files:
+  -   path: /etc/server.conf
+      owner: root:root
+      permissions: "0644"
+      content: |
+        {
+          "user":  "${user}",
+          "password": "${password}",
+          "database": "${database}",
+          "netloc": "${hostname}:${port}"
+        }
+runcmd:
+  - curl -sL https://api.github.com/repos/terraform-in-action/vanilla-webserver-src/releases/latest | jq -r ".assets[].browser_download_url" |
+       wget -qi - 
+  - unzip deployment.zip
+  - ./deployment/server
+packages:
+  - jq
+  - wget
+  - unzip
+

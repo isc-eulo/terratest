@@ -1,0 +1,3 @@
+sub redes con s3
+redes en us-east-2
+bucket us-west-1

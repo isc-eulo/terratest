@@ -1,3 +1,4 @@
+Ejercicio guiado - Provisioners
 provisioners
 key publica y privada
-ejecucion de comandos remota
+ejecucion de comandos sh remota
